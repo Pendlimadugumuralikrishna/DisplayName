@@ -31,7 +31,11 @@ function Displayname() {
             <br/>
             <button type='submit'>submit</button>
         </form>
-        {verified && `Full Name: ${fullName.firstName} ${fullName.lastName}`}
+        {verified && (
+        <p>
+          Full Name: {fullName.firstName} {fullName.lastName}
+        </p>
+      )}
     </div>
   )
 }
